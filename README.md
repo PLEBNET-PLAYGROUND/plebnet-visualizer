@@ -16,3 +16,7 @@ Run megahub_auto.py to fetch the LN and put stuff where its needed.
 ??
 ## Step 4:
 Profit!!
+
+# notes 
+docker exec playground-lnd-0 lncli --macaroonpath /root/.lnd/data/chain/bitcoin/signet/admin.macaroon  describegraph | jq '.nodes[] | .pub_key' > known_plebs.json
+sed '$!s/$/,/'

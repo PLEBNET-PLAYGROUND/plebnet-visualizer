@@ -8,3 +8,6 @@ plebnet/graphs/graph_full.json
 plebnet/graphs/graph3d.json
 
 plebnet/graphs/graph3d_full.json
+
+describegraph.json
+known_plebs.json

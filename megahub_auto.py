@@ -127,7 +127,7 @@ if __name__ == '__main__':
     #plebnet
 
     t0 = time()
-    myCmd = 'docker exec lnd lncli describegraph > ' + ln_path
+    myCmd = 'docker exec playground-lnd-0 lncli --macaroonpath /root/.lnd/data/chain/bitcoin/signet/admin.macaroon  describegraph > ' + ln_path
     os.system(myCmd)
     
     t1 = time()
